@@ -11,5 +11,5 @@ function gcwlft()
 function gtcl()
 {
 	git clone https://github.com/GarvielL0ken/$1
-	cd $1:
+	cd $1
 }
