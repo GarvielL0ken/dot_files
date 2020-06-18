@@ -8,6 +8,12 @@ function venv_new()
 	venv_activ
 }
 
+function venv_new_flask()
+{
+	venv_new $1
+	pip install flask
+}
+
 function gcw()
 {
 	gcc -Wall -Werror -Wextra $@
