@@ -1,3 +1,13 @@
+alias venv_activ="source venv/bin/activate"
+
+function venv_new()
+{
+	mkdir $1
+	cd $1
+	python3 -m venv venv
+	venv_activ
+}
+
 function gcw()
 {
 	gcc -Wall -Werror -Wextra $@
